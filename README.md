@@ -1,5 +1,5 @@
 # docker_wordpress
-WordPress コンテナを立ち上げる Docker Compose です
+WordPress コンテナを立ち上げる Docker Compose です。
 テーマを作成する時の開発環境として使用します。
 
 ## 使い方
