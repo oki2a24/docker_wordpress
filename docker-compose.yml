@@ -12,6 +12,8 @@ services:
       WORDPRESS_DB_USER: exampleuser
       WORDPRESS_DB_PASSWORD: examplepass
       WORDPRESS_DB_NAME: exampledb
+    volumes:
+      - ${APP_PATH_HOST}${WP_YOUR_APP_NAME}:${APP_PATH_CONTAINER}${WP_YOUR_APP_NAME}
 
   db:
     image: mysql:5.7

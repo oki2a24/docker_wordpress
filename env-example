@@ -1,0 +1,6 @@
+# あなたの WordPress アプリ(テーマ、プラグイン)名(ディレクトリ名)
+WP_YOUR_APP_NAME=oki2a24com-twentynineteen-child
+# Docker ホストにおける、あなたのアプリフォルダを置くパス
+APP_PATH_HOST=../
+# Docker コンテナにおける、あなたのアプリフォルダを置くパス
+APP_PATH_CONTAINER=/var/www/html/wp-content/themes/
