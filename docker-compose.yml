@@ -16,10 +16,12 @@ services:
       - ${APP_PATH_HOST}${WP_YOUR_APP_NAME}:${APP_PATH_CONTAINER}${WP_YOUR_APP_NAME}
 
   db:
-    image: mysql:5.7
+    image: mysql:latest
     restart: always
     environment:
       MYSQL_DATABASE: exampledb
       MYSQL_USER: exampleuser
       MYSQL_PASSWORD: examplepass
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - ./db/etc/mysql/conf.d:/etc/mysql/conf.d
